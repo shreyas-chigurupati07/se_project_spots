@@ -8,4 +8,6 @@
 .page {
   background-color: #fcf5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  width: 1440px;
+  height: 46px;
 }
