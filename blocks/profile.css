@@ -51,12 +51,16 @@
   opacity: 70%;
   gap: 8px;
   background-color: #fcf5e5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
 }
 
 .profile__add-btn {
   margin-left: auto;
   margin-bottom: 0px;
-  margin-top: 138px;
+  margin-top: auto;
   padding: 0;
   background-color: #212121;
   border-radius: 8px;
@@ -89,10 +93,12 @@
 }
 
 .profile__edit-btn:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
 .profile__add-btn:hover {
+  cursor: pointer;
   opacity: 80%;
 }
 
@@ -127,6 +133,7 @@
   }
 
   .profile__add-btn {
+    width: 100%;
     margin: 0;
   }
   .profile__edit-btn {
