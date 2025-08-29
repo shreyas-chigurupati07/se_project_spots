@@ -61,7 +61,7 @@
   margin-left: auto;
   margin-bottom: 0px;
   margin-top: auto;
-  padding: 0;
+  padding: 2px 0;
   background-color: #212121;
   border-radius: 8px;
   width: 149px;
@@ -70,26 +70,11 @@
   border: 0;
   display: flex;
   gap: 8px;
-}
-
-.profile__add-btn-icon {
-  width: 12px;
-  height: 12px;
-  margin-top: 20px;
-  margin-left: 32px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border: 2px;
-}
-
-.profile__add-btn-description {
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  width: 73px;
-  height: 16px;
-  padding-top: 2px;
-  margin-top: 18px;
 }
 
 .profile__edit-btn:hover {
