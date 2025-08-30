@@ -100,3 +100,7 @@ se_project_spots/
 │       └── Poppins-Regular.ttf
 └── favicon.ico
 ```
+
+## Project Demo
+
+[Demo presentation](https://www.loom.com/share/e5ef1144eb3141d395d0b73fb378d8e0?sid=2552964e-36b7-468a-aca5-d8a1910b1d6a)
