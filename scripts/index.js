@@ -52,7 +52,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   console.log(linkInput.value);
   console.log(captionInput.value);
-  newPostModal.classList.remove("moda-_is-opened");
+  newPostModal.classList.remove("modal_is-opened");
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
