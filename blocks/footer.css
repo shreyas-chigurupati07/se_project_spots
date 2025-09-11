@@ -1,11 +1,10 @@
 .footer {
   margin: 0 auto;
-  padding: 60px;
+  padding: 60px 0;
   text-align: center;
 }
 
 .footer__paragraph {
-  height: 16px;
   color: #212121;
   opacity: 70%;
   font-weight: 400;

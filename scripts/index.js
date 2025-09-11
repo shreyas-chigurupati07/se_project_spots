@@ -8,16 +8,24 @@ const jobInput = editProfileModal.querySelector("#edit-profile-description");
 const profileNameElement = document.querySelector(".profile__name");
 const profileJobElement = document.querySelector(".profile__description");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function removeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
 editProfileBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
   nameInput.value = profileNameElement.textContent;
   jobInput.value = profileJobElement.textContent;
 });
 
 editProfileCloseBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  editProfileModal.classList.remove("modal_is-opened");
+  removeModal(editProfileModal);
 });
 
 const newPostBtn = document.querySelector(".profile__add-btn");
@@ -26,12 +34,12 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
 newPostBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  newPostModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
 });
 
 newPostCloseBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  newPostModal.classList.remove("modal_is-opened");
+  removeModal(editProfileModal);
 });
 
 function handleProfileFormSubmit(evt) {
@@ -39,7 +47,7 @@ function handleProfileFormSubmit(evt) {
   profileNameElement.textContent = nameInput.value;
   profileJobElement.textContent = jobInput.value;
 
-  editProfileModal.classList.remove("modal_is-opened");
+  removeModal(editProfileModal);
 }
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
@@ -52,7 +60,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   console.log(linkInput.value);
   console.log(captionInput.value);
-  newPostModal.classList.remove("modal_is-opened");
+  removeModal(editProfileModal);
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
