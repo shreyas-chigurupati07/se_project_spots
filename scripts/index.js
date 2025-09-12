@@ -34,12 +34,12 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 
 newPostBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openModal(editProfileModal);
+  openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  removeModal(editProfileModal);
+  removeModal(newPostModal);
 });
 
 function handleProfileFormSubmit(evt) {
@@ -60,7 +60,7 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   console.log(linkInput.value);
   console.log(captionInput.value);
-  removeModal(editProfileModal);
+  removeModal(newPostModal);
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);

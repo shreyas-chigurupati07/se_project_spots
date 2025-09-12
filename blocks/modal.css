@@ -30,12 +30,14 @@
   padding: 32px 50px;
   max-width: 730px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .modal__row {
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
+  margin-bottom: 32px;
   align-items: center;
 }
 
