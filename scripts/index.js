@@ -65,12 +65,11 @@ function getCardElement(data) {
   const cardDeleteBtnElement = cardElement.querySelector(".card__delete-btn");
   cardDeleteBtnElement.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
 
   cardImageElement.addEventListener("click", () => {
     previewImageElement.src = data.link;
-    previewNameElement.alt = data.name;
+    previewImageElement.alt = data.name;
     previewNameElement.textContent = data.name;
     openModal(previewModal);
   });
