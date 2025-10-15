@@ -87,9 +87,9 @@ function closeModal(modal) {
 
 editProfileBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openModal(editProfileModal);
   nameInput.value = profileNameElement.textContent;
   jobInput.value = profileJobElement.textContent;
+  openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", function (evt) {
@@ -127,8 +127,9 @@ function handleProfileFormSubmit(evt) {
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
 
 const addCardFormElement = newPostModal.querySelector(".modal__form");
-const linkInput = newPostModal.querySelector("#picture-link");
-const captionInput = newPostModal.querySelector("#caption");
+const linkInput = newPostModal.querySelector("#card-link-input");
+const captionInput = newPostModal.querySelector("#card-caption-input");
+const cardSubmitBtn = newPostModal.querySelector(".modal__save-btn");
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
@@ -140,7 +141,8 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
-  addCardFormElement.reset();
+  evt.target.reset();
+  disableButton(cardSubmitBtn, settings);
 
   closeModal(newPostModal);
 }
