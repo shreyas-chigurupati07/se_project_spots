@@ -17,8 +17,9 @@
 }
 
 .profile__name {
-  margin: 0 0 12px;
+  margin: 0;
   font-size: 32px;
+  padding-bottom: 12px;
   line-height: 100%;
   font-weight: 500;
   display: -webkit-box;
