@@ -102,5 +102,6 @@ se_project_spots/
 ```
 
 ## Project Demo
+Check out [Pitch Video](https://drive.google.com/file/d/1XnzHIH0BMbyGLXK-EvVEP0dgZX0q4sZ1/view?usp=sharing), where I describe my project and some challenges I faced while building it.
 
-[Demo presentation](https://www.loom.com/share/e5ef1144eb3141d395d0b73fb378d8e0?sid=2552964e-36b7-468a-aca5-d8a1910b1d6a)
+
