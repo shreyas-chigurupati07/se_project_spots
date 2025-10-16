@@ -38,13 +38,13 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   padding: 0;
   cursor: pointer;
 }
 
 .card__like-btn:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__like-btn_active {
