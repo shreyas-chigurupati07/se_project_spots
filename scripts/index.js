@@ -105,6 +105,7 @@ editProfileBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   nameInput.value = profileNameElement.textContent;
   descriptionInput.value = profileJobElement.textContent;
+  resetValidation(profileFormElement, [nameInput, descriptionInput], settings);
   openModal(editProfileModal);
 });
 
