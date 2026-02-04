@@ -94,7 +94,12 @@ function getCardElement(data) {
 
   const cardLikeBtnElement = cardElement.querySelector(".card__like-btn");
 
-  cardLikeBtnElement.addEventListener("click", () => {
+  if (data && data.isLiked) {
+    cardLikeBtnElement.classList.add("card__like-btn_active");
+  }
+
+  cardLikeBtnElement.addEventListener("click", (evt) => {
+    evt.preventDefault();
     selectedCardId = data._id;
 
     const isCurrentlyLiked = cardLikeBtnElement.classList.contains(
